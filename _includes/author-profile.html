@@ -6,6 +6,7 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
+  {% if author.avatar %}
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
@@ -14,6 +15,8 @@
     {% endif %}
   </div>
 
+  {% endif %}
+
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
@@ -21,7 +24,7 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
+    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | default: "链接" }}</button>
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
