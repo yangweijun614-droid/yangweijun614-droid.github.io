@@ -11,7 +11,7 @@ locale: "zh-CN"
 site_theme: "air"
 title: "个人主页"
 title_separator          : "-"
-name: "个人主页"
+name: "杨伟俊"
 description: "个人介绍、AI 项目、学习笔记与简历。"
 url: "https://yangweijun614-droid.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -21,7 +21,8 @@ repository: "yangweijun614-droid/yangweijun614-droid.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  name: "个人主页"
+  name: "杨伟俊"
+  email: "yangweijun614@gmail.com"
   github: "yangweijun614-droid"
 
 # Publication Category - The following the list of publication categories and their headings
@@ -275,7 +276,7 @@ whitelist:
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
