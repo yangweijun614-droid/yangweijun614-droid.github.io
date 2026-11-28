@@ -17,6 +17,8 @@ permalink: /projects/
 
 评测口径：Recall@5 逐题用前五条命中数除以已标注相关条款数，再取平均。两种检索使用同一题集。
 
+详细设计：[架构与权限设计](/architecture/)
+
 ## Code Agent 与回归评测
 
 技术栈：Python、LangGraph、Qwen3-8B（拟选）、Git、pytest、Docker
